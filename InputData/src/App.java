@@ -7,6 +7,7 @@ public class App {
         
         String firstName;
         char middleInitial;
+        String lastName;
         String city;
         int age;
         char sex;
@@ -16,6 +17,9 @@ public class App {
         firstName = keyboard.nextLine();
         System.out.print("What's your middle initial? --> ");
         middleInitial = keyboard.next().charAt(0);
+        System.out.print("What's your last name? --> ");
+        keyboard.nextLine();
+        lastName = keyboard.nextLine();
         System.out.print("How old are you? --> ");
         age = keyboard.nextInt();
         keyboard.nextLine();
@@ -26,8 +30,8 @@ public class App {
         System.out.print("Type in your hourly wage (€) --> ");
         salary = keyboard.nextFloat();
 
-        System.out.println("Hello, " + firstName + " " + middleInitial + ". from "
-                + city + "!");
+        System.out.println("Hello, " + firstName + " " + middleInitial + ". " + lastName
+                + " from " + city + "!");
         System.out.println("Your sex is '" + sex + "', your're "
                 + age + " years old and you earn €" + salary + " per hour. Nice!");
 
